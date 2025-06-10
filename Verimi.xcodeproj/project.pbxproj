@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E70EA8532DF8ED5000DCB807 /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70EA8522DF8ED4A00DCB807 /* ImageCaching.swift */; };
+		E76244DE2C59052400FB41FD /* VerimiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76244DD2C59052400FB41FD /* VerimiApp.swift */; };
+		E76244E02C59052400FB41FD /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76244DF2C59052400FB41FD /* PhotosView.swift */; };
+		E76244E22C59052500FB41FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76244E12C59052500FB41FD /* Assets.xcassets */; };
+		E76244E52C59052500FB41FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76244E42C59052500FB41FD /* Preview Assets.xcassets */; };
+		E76244EF2C59052500FB41FD /* VerimiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76244EE2C59052500FB41FD /* VerimiTests.swift */; };
+		E76244F92C59052500FB41FD /* VerimiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76244F82C59052500FB41FD /* VerimiUITests.swift */; };
+		E76244FB2C59052500FB41FD /* VerimiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76244FA2C59052500FB41FD /* VerimiUITestsLaunchTests.swift */; };
+		E76245092C59982F00FB41FD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76245082C59982F00FB41FD /* APIClient.swift */; };
+		E762450B2C59986200FB41FD /* URLSessionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E762450A2C59986200FB41FD /* URLSessionAPIClient.swift */; };
+		E762450E2C59988600FB41FD /* PhotosEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E762450D2C59988600FB41FD /* PhotosEndPoint.swift */; };
+		E76245102C59990900FB41FD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E762450F2C59990900FB41FD /* APIError.swift */; };
+		E76245122C59992000FB41FD /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76245112C59992000FB41FD /* HttpMethod.swift */; };
+		E76245142C59993500FB41FD /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76245132C59993500FB41FD /* APIEndpoint.swift */; };
+		E76245182C5999C600FB41FD /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76245172C5999C600FB41FD /* PhotosViewModel.swift */; };
+		E762451B2C5999F900FB41FD /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E762451A2C5999F900FB41FD /* Photo.swift */; };
+		E762451E2C599EB800FB41FD /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = E762451D2C599EB800FB41FD /* NukeUI */; };
+		E76245232C59ABD800FB41FD /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76245222C59ABD800FB41FD /* AppContainer.swift */; };
+		E76245262C59ABFC00FB41FD /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76245252C59ABFC00FB41FD /* FavouritesView.swift */; };
+		E76245292C59B4D400FB41FD /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76245282C59B4D400FB41FD /* PhotoDetailView.swift */; };
+		E762452C2C59B73300FB41FD /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E762452B2C59B73300FB41FD /* StringExt.swift */; };
+		E762452F2C59BDB600FB41FD /* AppImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E762452E2C59BDB600FB41FD /* AppImageView.swift */; };
+		E76245312C59C7D500FB41FD /* PhotosGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76245302C59C7D500FB41FD /* PhotosGridView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E76244EB2C59052500FB41FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E76244D22C59052400FB41FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76244D92C59052400FB41FD;
+			remoteInfo = Verimi;
+		};
+		E76244F52C59052500FB41FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E76244D22C59052400FB41FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76244D92C59052400FB41FD;
+			remoteInfo = Verimi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E70EA8522DF8ED4A00DCB807 /* ImageCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaching.swift; sourceTree = "<group>"; };
+		E76244DA2C59052400FB41FD /* Verimi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Verimi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76244DD2C59052400FB41FD /* VerimiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerimiApp.swift; sourceTree = "<group>"; };
+		E76244DF2C59052400FB41FD /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		E76244E12C59052500FB41FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E76244E42C59052500FB41FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E76244EA2C59052500FB41FD /* VerimiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerimiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76244EE2C59052500FB41FD /* VerimiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerimiTests.swift; sourceTree = "<group>"; };
+		E76244F42C59052500FB41FD /* VerimiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerimiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76244F82C59052500FB41FD /* VerimiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerimiUITests.swift; sourceTree = "<group>"; };
+		E76244FA2C59052500FB41FD /* VerimiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerimiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E76245082C59982F00FB41FD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E762450A2C59986200FB41FD /* URLSessionAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClient.swift; sourceTree = "<group>"; };
+		E762450D2C59988600FB41FD /* PhotosEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosEndPoint.swift; sourceTree = "<group>"; };
+		E762450F2C59990900FB41FD /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		E76245112C59992000FB41FD /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		E76245132C59993500FB41FD /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		E76245172C5999C600FB41FD /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		E762451A2C5999F900FB41FD /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		E762451F2C599FDC00FB41FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E76245222C59ABD800FB41FD /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		E76245252C59ABFC00FB41FD /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
+		E76245282C59B4D400FB41FD /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		E762452B2C59B73300FB41FD /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		E762452E2C59BDB600FB41FD /* AppImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageView.swift; sourceTree = "<group>"; };
+		E76245302C59C7D500FB41FD /* PhotosGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGridView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E76244D72C59052400FB41FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E762451E2C599EB800FB41FD /* NukeUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76244E72C59052500FB41FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76244F12C59052500FB41FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E76244D12C59052400FB41FD = {
+			isa = PBXGroup;
+			children = (
+				E76244DC2C59052400FB41FD /* Verimi */,
+				E76244ED2C59052500FB41FD /* VerimiTests */,
+				E76244F72C59052500FB41FD /* VerimiUITests */,
+				E76244DB2C59052400FB41FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E76244DB2C59052400FB41FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E76244DA2C59052400FB41FD /* Verimi.app */,
+				E76244EA2C59052500FB41FD /* VerimiTests.xctest */,
+				E76244F42C59052500FB41FD /* VerimiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E76244DC2C59052400FB41FD /* Verimi */ = {
+			isa = PBXGroup;
+			children = (
+				E76245202C59ABBD00FB41FD /* Main */,
+				E762451F2C599FDC00FB41FD /* Info.plist */,
+				E76244E12C59052500FB41FD /* Assets.xcassets */,
+				E76244E32C59052500FB41FD /* Preview Content */,
+			);
+			path = Verimi;
+			sourceTree = "<group>";
+		};
+		E76244E32C59052500FB41FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E76244E42C59052500FB41FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E76244ED2C59052500FB41FD /* VerimiTests */ = {
+			isa = PBXGroup;
+			children = (
+				E76244EE2C59052500FB41FD /* VerimiTests.swift */,
+			);
+			path = VerimiTests;
+			sourceTree = "<group>";
+		};
+		E76244F72C59052500FB41FD /* VerimiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E76244F82C59052500FB41FD /* VerimiUITests.swift */,
+				E76244FA2C59052500FB41FD /* VerimiUITestsLaunchTests.swift */,
+			);
+			path = VerimiUITests;
+			sourceTree = "<group>";
+		};
+		E76245072C59981200FB41FD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E762450C2C59987200FB41FD /* PhotosEndPoint */,
+				E7F52CDF2C5B01A200DF4651 /* Base */,
+				E76245192C5999E700FB41FD /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E762450C2C59987200FB41FD /* PhotosEndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				E762450D2C59988600FB41FD /* PhotosEndPoint.swift */,
+			);
+			path = PhotosEndPoint;
+			sourceTree = "<group>";
+		};
+		E76245152C5999A900FB41FD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E76245222C59ABD800FB41FD /* AppContainer.swift */,
+				E76244DD2C59052400FB41FD /* VerimiApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E76245162C5999B100FB41FD /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				E76244DF2C59052400FB41FD /* PhotosView.swift */,
+				E76245172C5999C600FB41FD /* PhotosViewModel.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		E76245192C5999E700FB41FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E762451A2C5999F900FB41FD /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E76245202C59ABBD00FB41FD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E76245152C5999A900FB41FD /* App */,
+				E762452A2C59B72400FB41FD /* Extensions */,
+				E76245072C59981200FB41FD /* Network */,
+				E7F52CDE2C5B016200DF4651 /* Scenes */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E76245242C59ABED00FB41FD /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				E76245252C59ABFC00FB41FD /* FavouritesView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		E76245272C59B4C500FB41FD /* PhotoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E76245282C59B4D400FB41FD /* PhotoDetailView.swift */,
+			);
+			path = PhotoDetail;
+			sourceTree = "<group>";
+		};
+		E762452A2C59B72400FB41FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E762452B2C59B73300FB41FD /* StringExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E762452D2C59BDA400FB41FD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E70EA8522DF8ED4A00DCB807 /* ImageCaching.swift */,
+				E762452E2C59BDB600FB41FD /* AppImageView.swift */,
+				E76245302C59C7D500FB41FD /* PhotosGridView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E7F52CDE2C5B016200DF4651 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E762452D2C59BDA400FB41FD /* Common */,
+				E76245272C59B4C500FB41FD /* PhotoDetail */,
+				E76245242C59ABED00FB41FD /* Favorites */,
+				E76245162C5999B100FB41FD /* Photos */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E7F52CDF2C5B01A200DF4651 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E76245082C59982F00FB41FD /* APIClient.swift */,
+				E762450A2C59986200FB41FD /* URLSessionAPIClient.swift */,
+				E762450F2C59990900FB41FD /* APIError.swift */,
+				E76245112C59992000FB41FD /* HttpMethod.swift */,
+				E76245132C59993500FB41FD /* APIEndpoint.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E76244D92C59052400FB41FD /* Verimi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76244FE2C59052500FB41FD /* Build configuration list for PBXNativeTarget "Verimi" */;
+			buildPhases = (
+				E76244D62C59052400FB41FD /* Sources */,
+				E76244D72C59052400FB41FD /* Frameworks */,
+				E76244D82C59052400FB41FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Verimi;
+			packageProductDependencies = (
+				E762451D2C599EB800FB41FD /* NukeUI */,
+			);
+			productName = Verimi;
+			productReference = E76244DA2C59052400FB41FD /* Verimi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E76244E92C59052500FB41FD /* VerimiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76245012C59052500FB41FD /* Build configuration list for PBXNativeTarget "VerimiTests" */;
+			buildPhases = (
+				E76244E62C59052500FB41FD /* Sources */,
+				E76244E72C59052500FB41FD /* Frameworks */,
+				E76244E82C59052500FB41FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E76244EC2C59052500FB41FD /* PBXTargetDependency */,
+			);
+			name = VerimiTests;
+			productName = VerimiTests;
+			productReference = E76244EA2C59052500FB41FD /* VerimiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E76244F32C59052500FB41FD /* VerimiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76245042C59052500FB41FD /* Build configuration list for PBXNativeTarget "VerimiUITests" */;
+			buildPhases = (
+				E76244F02C59052500FB41FD /* Sources */,
+				E76244F12C59052500FB41FD /* Frameworks */,
+				E76244F22C59052500FB41FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E76244F62C59052500FB41FD /* PBXTargetDependency */,
+			);
+			name = VerimiUITests;
+			productName = VerimiUITests;
+			productReference = E76244F42C59052500FB41FD /* VerimiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E76244D22C59052400FB41FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					E76244D92C59052400FB41FD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					E76244E92C59052500FB41FD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E76244D92C59052400FB41FD;
+					};
+					E76244F32C59052500FB41FD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E76244D92C59052400FB41FD;
+					};
+				};
+			};
+			buildConfigurationList = E76244D52C59052400FB41FD /* Build configuration list for PBXProject "Verimi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E76244D12C59052400FB41FD;
+			packageReferences = (
+				E762451C2C599EB800FB41FD /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
+			productRefGroup = E76244DB2C59052400FB41FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E76244D92C59052400FB41FD /* Verimi */,
+				E76244E92C59052500FB41FD /* VerimiTests */,
+				E76244F32C59052500FB41FD /* VerimiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E76244D82C59052400FB41FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76244E52C59052500FB41FD /* Preview Assets.xcassets in Resources */,
+				E76244E22C59052500FB41FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76244E82C59052500FB41FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76244F22C59052500FB41FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E76244D62C59052400FB41FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76245182C5999C600FB41FD /* PhotosViewModel.swift in Sources */,
+				E70EA8532DF8ED5000DCB807 /* ImageCaching.swift in Sources */,
+				E762450B2C59986200FB41FD /* URLSessionAPIClient.swift in Sources */,
+				E762450E2C59988600FB41FD /* PhotosEndPoint.swift in Sources */,
+				E76244E02C59052400FB41FD /* PhotosView.swift in Sources */,
+				E762451B2C5999F900FB41FD /* Photo.swift in Sources */,
+				E76245292C59B4D400FB41FD /* PhotoDetailView.swift in Sources */,
+				E762452F2C59BDB600FB41FD /* AppImageView.swift in Sources */,
+				E76245122C59992000FB41FD /* HttpMethod.swift in Sources */,
+				E76245232C59ABD800FB41FD /* AppContainer.swift in Sources */,
+				E76244DE2C59052400FB41FD /* VerimiApp.swift in Sources */,
+				E76245092C59982F00FB41FD /* APIClient.swift in Sources */,
+				E762452C2C59B73300FB41FD /* StringExt.swift in Sources */,
+				E76245262C59ABFC00FB41FD /* FavouritesView.swift in Sources */,
+				E76245312C59C7D500FB41FD /* PhotosGridView.swift in Sources */,
+				E76245102C59990900FB41FD /* APIError.swift in Sources */,
+				E76245142C59993500FB41FD /* APIEndpoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76244E62C59052500FB41FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76244EF2C59052500FB41FD /* VerimiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E76244F02C59052500FB41FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E76244FB2C59052500FB41FD /* VerimiUITestsLaunchTests.swift in Sources */,
+				E76244F92C59052500FB41FD /* VerimiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E76244EC2C59052500FB41FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E76244D92C59052400FB41FD /* Verimi */;
+			targetProxy = E76244EB2C59052500FB41FD /* PBXContainerItemProxy */;
+		};
+		E76244F62C59052500FB41FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E76244D92C59052400FB41FD /* Verimi */;
+			targetProxy = E76244F52C59052500FB41FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E76244FC2C59052500FB41FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E76244FD2C59052500FB41FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E76244FF2C59052500FB41FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Verimi/Preview Content\"";
+				DEVELOPMENT_TEAM = 2V2NCXUZ82;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Verimi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mystuff.Verimi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E76245002C59052500FB41FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Verimi/Preview Content\"";
+				DEVELOPMENT_TEAM = 2V2NCXUZ82;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Verimi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mystuff.Verimi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E76245022C59052500FB41FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mystuff.VerimiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Verimi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Verimi";
+			};
+			name = Debug;
+		};
+		E76245032C59052500FB41FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mystuff.VerimiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Verimi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Verimi";
+			};
+			name = Release;
+		};
+		E76245052C59052500FB41FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mystuff.VerimiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Verimi;
+			};
+			name = Debug;
+		};
+		E76245062C59052500FB41FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mystuff.VerimiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Verimi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E76244D52C59052400FB41FD /* Build configuration list for PBXProject "Verimi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76244FC2C59052500FB41FD /* Debug */,
+				E76244FD2C59052500FB41FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76244FE2C59052500FB41FD /* Build configuration list for PBXNativeTarget "Verimi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76244FF2C59052500FB41FD /* Debug */,
+				E76245002C59052500FB41FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76245012C59052500FB41FD /* Build configuration list for PBXNativeTarget "VerimiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76245022C59052500FB41FD /* Debug */,
+				E76245032C59052500FB41FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76245042C59052500FB41FD /* Build configuration list for PBXNativeTarget "VerimiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E76245052C59052500FB41FD /* Debug */,
+				E76245062C59052500FB41FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E762451C2C599EB800FB41FD /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E762451D2C599EB800FB41FD /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E762451C2C599EB800FB41FD /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E76244D22C59052400FB41FD /* Project object */;
+}
