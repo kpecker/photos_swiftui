@@ -1,1 +1,1 @@
-# photos_swiftui
+# SwiftUI photos app with Image Caching and Favorites
